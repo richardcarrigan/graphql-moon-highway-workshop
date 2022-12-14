@@ -1,15 +1,8 @@
 const { ApolloServer } = require("@apollo/server");
 const { buildSubgraphSchema } = require("@apollo/subgraph");
-const {
-  startStandaloneServer,
-} = require("@apollo/server/standalone");
+const { startStandaloneServer } = require("@apollo/server/standalone");
 const { gql } = require("graphql-tag");
-const {
-  addAccount,
-  findAllAccounts,
-  findAccount,
-  verifyPassword,
-} = require("./lib");
+const { addAccount, findAllAccounts, findAccount, verifyPassword } = require("./lib");
 const jwt = require("jsonwebtoken");
 
 const typeDefs = gql`
@@ -115,7 +108,7 @@ async function startApolloServer() {
         verifyPassword,
       };
     },
-    listen: { port: process.env.PORT },
+    listen: { port: 4001 },
   });
   console.log(`👨‍👩‍👦‍👦 Accounts service running at ${url}`);
 }

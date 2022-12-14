@@ -1,10 +1,10 @@
 {
   "name": "service-accounts",
   "version": "0.0.0",
-  "description": "Let' build an account service",
+  "description": "Let's build an account service",
   "main": "index.js",
   "scripts": {
-    "start": "PORT=4001 nodemon ."
+    "start": "nodemon ."
   },
   "keywords": [],
   "author": "",
