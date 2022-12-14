@@ -1,0 +1,19 @@
+{
+  "name": "service-colors",
+  "version": "1.0.0",
+  "description": "A service to manage all of the colors posted to the hue-review.",
+  "main": "index.js",
+  "scripts": {
+    "start": "PORT=4002 nodemon ."
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@apollo/server": "^4.1.1",
+    "graphql": "^16.6.0",
+    "graphql-tag": "^2.12.6",
+    "nodemon": "^2.0.20",
+    "shortid": "^2.2.16"
+  }
+}
